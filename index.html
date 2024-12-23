@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- my css link -->
+  <link rel="stylesheet" href="style.css">
+
+<!-- my fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  
+
+</head>
+<body>
+
+  <section class="activity_tracker">
+
+    <div class="tracker_profile">
+
+      <div class="profile_top padding">
+        <img src="./images/image-jeremy.png" alt="jeremy" class="avatar">
+        <div class="avatar_info">
+          <h1>
+            <span>Report for</span><br>
+            Jeremy Robson
+          </h1>
+        </div>
+      </div>
+
+      <div class="profile_bottom padding">
+        <button class="btn" data-option="daily">Daily</button>
+        <button class="btn active"data-option="weekly">Weekly</button>
+        <button class="btn" data-option="monthly">Monthly</button>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base work">
+        <img src="./images/icon-work.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Work</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>32hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>36hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base play">
+        <img src="./images/icon-play.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Play</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>10hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>8hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base study">
+        <img src="./images/icon-study.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Study</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>4hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>7hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base exercise">
+        <img src="./images/icon-exercise.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Exercise</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>4hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>5hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base social">
+        <img src="./images/icon-social.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Social</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>5hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>10hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card_base self-care">
+        <img src="./images/icon-self-care.svg">
+      </div>
+
+      <div class="card_top padding">
+
+        <div class="card_top_header">
+          <p>Self Care</p>
+          <p class="dots">...</p>
+        </div>
+
+        <div class="card_top_bottom">
+          <h2>2hrs</h2>
+          <div class="previous">
+            <p>Last Week</p>
+            <p>-</p>
+            <p>2hrs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- my javaScript link -->
+  <script defer src="./time.js"></script>
+</body>
+</html>
